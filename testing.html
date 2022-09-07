@@ -1,102 +1,294 @@
 <!DOCTYPE html>
 
-  <html lang="en-US">
+  <html lang="en-us">
 
     <head>
 
-      <!-- Write your comments here -->
       <title>Jokes</title>
-      <meta charset="utf-8"/>
+      <meta charset="UTF-8"/>
+      <meta name="author" content="Logan Wang">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
       <style>
-        body {background-color: lightgray}
+
+        * {
+          box-sizing: border-box;
+        }
+
+        header {
+          padding: 180px;
+          text-align: center;
+          font-size: 60px;
+          font-weight: bold;
+          color: black;
+        }
+
+        nav {
+          float: left;
+          width: 100%;
+          background: #000000;
+        }
+
+        aside {
+          width: 30%;
+          padding-left: 15px;
+          margin-left: 15px;
+          float: right;
+          font-style: italic;
+          background-color: #B0E0E6;
+        }
+
+        article {
+          float: left;
+          padding: 20px;
+          width: 100%;
+          background-color: #bfe3b4;
+        }
+
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        footer {
+          background-color: #99c5c4;
+          padding: 10px;
+          text-align: center;
+        }
+
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        li a {
+          float: left;
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          text-decoration: none;
+        }
+
+        li a:hover {
+          background-color: #111;
+        }
+
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+
+        .header {
+          background-color: #FAED27;
+          font-family: Garamond;
+          color: red;
+        }
+
       </style>
-      <link rel="icon" href="laughing.gif">
+
+      <link rel="icon" href="images/tearsofjoy.webp">
 
     </head>
 
     <body>
 
-      <h1 style="color:red; text-align:center">Jokes</h1>
-      <h2 style="text-align:center;">by Logan Wang</h2>
-      <br>
-      <blockquote cite="https://en.wikipedia.org/wiki/Joke" style="text-align:center">
-        The trouble with practical jokes is that very often they get elected. —Will Rogers
-      </blockquote>
-      <br>
+      <header style="background-image: url('images/enjoyingajoke.jpg');">
+        <span style="border: 5px solid black; font-family: Brush Script MT" title="by Logan Wang">&nbsp&nbspJokes&nbsp&nbsp</span>
+      </header>
 
-      <a href="What are Jokes?">What are Jokes?</a>
-      <br>
-      <a href="The History of Jokes">The History of Jokes</a>
-      <br>
-      <a href="Puns">Puns</a>
-      <br>
-      <a href="One-liners">One-liners</a>
-      <br>
+      <nav>
+        <ul>
+          <li><a href="#History of Jokes" title="learn a bit about jokes in history">History of Jokes</a></li>
+          <li><a href="#Components of a Joke" title="how exactly does one tell a joke?">Components of a Joke</a></li>
+          <li><a href="#Puns" title="good old-fashioned wordplay">Puns</a></li>
+          <li><a href="#One-liners" title="hilarious quotes and quips">One-liners</a></li>
+          <li><a href="#Anti-jokes" title="funny cause it's not funny">Anti-jokes</a></li>
+        </ul>
+      </nav>
 
-      <h2 id="What are Jokes?" style="background-color:powderblue; text-align:center">What are Jokes?</h2>
-      <blockquote cite="https://en.wikipedia.org/wiki/Joke">
-        A joke is a short humorous piece of oral literature in which the funniness culminates in the final sentence, called the punchline… In fact, the main condition is that the tension should reach its highest level at the very end. No continuation relieving the tension should be added. As for its being "oral," it is true that jokes may appear printed, but when further transferred, there is no obligation to reproduce the text verbatim, as in the case of poetry. —Robert Hetzron
-      </blockquote>
+      <hr>
 
-      <h2 id="The History of Jokes" style="background-color:powderblue; text-align:center">The History of Jokes</h2>
-      <p>According to the British Museum, the first recorded joke dates to around 2600 BCE. Authored on the Westcar Papyrus by Pharaoh Snefru's court magician, Djadjamankh, it reads: "How do you entertain a bored pharaoh? You sail a boatload of young women dressed only in fishing nets down the Nile and urge the pharaoh to go catch a fish."</p>
+      <section id="History of Jokes">
+        <article>
+          <h2 class="header">The History of Jokes</h2>
+          <p>2600 BC – King Snefru of Egypt's court magician Djadjamankh gives him a papyrus reading, "How do you entertain a bored pharaoh? You sail a boatload of young women dressed only in fishing nets down the Nile and urge the pharaoh to go catch a fish." According to researchers at the British Museum, this is the first written joke.</p>
+          <p>350 BC – The original Friar’s Club – the "Group of Sixty" – meet regularly in the Temple of Heracles in Athens to tell jokes. Alas, none have been passed down.</p>
+          <p>4th or 5th Century BC – A Greek anthology of more than 200 jokes called The Philolegos is written. The Greeks loved jokes about "scholastikos," or eggheads. An example: "An egghead was on a sea voyage when a big storm blew up, causing his slaves to weep in terror. 'Don’t cry,' he consoled them, 'I have freed you all in my will.'"</p>
+          <p>1451 – Papal secretary Poggio Bracciolini collects 273 Latin jokes (and puns) in "Liber Facetiarum." Included: "A friar preaches against adultery says, 'It is such an abominable sin that I would rather sleep with ten virgins than a single married woman.' Replies Poggio: 'Many who heard him felt the same way.'"</p>
+          <p>1603 – Shakespeare introduces the knock-knock joke in his play Macbeth. "Knock, knock, knock! / Who’s there, in the name of Beelzebub? / Here’s a farmer that hanged himself on the expectation of plenty/Come in time, have napkins enough about you; here you’ll sweat for 't." Orange you glad they got better?</p>
+          <p>1739 – "Joe Miller’s Jests," an English anthology of jokes, is a hit. Included: "A famous teacher of Arithmetick, who had long been married without being able to get his wife with child: One said to her, 'Madam, your husband is an excellent Arithmetician.' 'Yes,' replies she, 'only he can’t multiply.'"</p>
+          <p>1845 – Edward Lear's "Book of Nonsense" popularizes the limerick: "There was a Young Lady whose chin/Resembled the point of a pin/So she had it made sharp/And purchased a harp/And played several tunes with her chin." Ladies from Nantucket would arrive later.</p>
+          <p>1847 – Monthly New York magazine Knickerbocker publishes the classic, "why did the chicken cross the road? To get to the other side."</p>
+          <p>1900 – The Polish joke arrives in America. It is believed that the jokes evolved from Jewish Poles, who had a tradition of telling "egghead" jokes about the rabbis of the city Chelm. As immigrants poured into America, these evolved to be about the Polish people in general. "How do you get a one-armed Polak out of a tree? Wave."</p>
+          <p>1930s – The famed comedian Henny Youngman, trying to get an usher to escort wife Sadie to her seat, says his most famous one-liner: "take my wife – please!"</p>
+          <p>1968 – Gershon Legman writes "Rationale of the Dirty Joke" chronicling blue humor, the second edition of which includes the first known version of <a href="https://www.today.com/popculture/hilarious-aristocrats-gets-joke-wbna8702838" target="_blank">The Aristocrats</a> joke.</p>
+          <p>2002 – An English professor hosts a contest for the world’s funniest joke. The winner, credited to comedian Spike Milligan, reads as follows: "Two hunters are out in the woods when one of them collapses. He doesn’t seem to be breathing and his eyes are glazed. The other guy whips out his phone and calls the emergency services. He gasps, 'My friend is dead! What can I do?' The operator says, 'Calm down. I can help. First, let’s make sure he’s dead.' There is a silence, then a shot is heard. Back on the phone, the guy says, 'OK, now what?'"</p>
+          <img src="images/westcarpapyrus.jpg" alt="Westcar Papyrus" width=50% class="center">
+          <h4><center>The Westcar Papyrus contains the world's oldest recorded joke.</center></h4>
+        </article>
+      </section>
 
-      <h2 id="Puns" style="background-color:powderblue; text-align:center">Puns</h2>
-      <b>What do you get when you cross a dog and a cell phone?</b>
-      <p>A golden receiver. 🐕</p>
-      <br>
-      <b>Did you know that I'm really good at bowling?</b>
-      <p>It's right up my alley. 🎳</p>
-      <br>
-      <b>Did you hear about the restaurant on the moon?</b>
-      <p>I heard the food was good but it had no atmosphere. 🌕</p>
-      <br>
-      <b>Last night I had a dream that I was swimming in an ocean of soda.</b>
-      <p>Too bad it was just a Fanta sea. 🥤</p>
-      <br>
-      <b>How does Moses make his coffee?</b>
-      <p>Hebrews it. ☕</p>
-      <br>
-      <b>What did the grape say when he got stepped on?</b>
-      <p>Nothing, he just let out a little wine. 🍷</p>
-      <br>
-      <b>Why was Dumbo so sad?</b>
-      <p>He felt irrelephant. 🐘</p>
-      <br>
-      <b>How many tickles does it take to make an octopus laugh?</b>
-      <p>Ten-tickles. 🐙</p>
-      <br>
-      <b>Why could the mathematician only work from home?</b>
-      <p>Because he could only function in his domain. 📈</p>
-      <br>
-      <b>How was the Roman Empire split in two?</b>
-      <p>With a pair of Caesars. ✂️</p>
-      <br>
+      <hr>
 
-      <h2 id="One-liners" style="background-color:powderblue; text-align:center">One-liners</h2>
-      <p>My wife told me to stop impersonating a flamingo, so I had to put my foot down. 🦩</p>
-      <br>
-      <p>It was an emotional wedding. Even the cake was in tiers. 🎂</p>
-      <br>
-      <p>My girlfriend makes me want to be a better person - so I can get a better girlfriend. 🧑‍🤝‍🧑</p>
-      <br>
-      <p>My friend drove his expensive car into a tree and found out how his Mercedes bends. 🚗</p>
-      <br>
-      <p>When life gives you melons, you might be dyslexic. 🍉</p>
-      <br>
-      <p>I failed math so many times at school, I can’t even count. 🧮</p>
-      <br>
-      <p>I can’t believe I got fired from the calendar factory. All I did was take a day off. 📅</p>
-      <br>
-      <p>Most people are shocked when they find out how bad I am as an electrician. ⚡</p>
-      <br>
-      <p>The problem isn’t that obesity runs in your family. It’s that no one runs in your family. 🏃</p>
-      <br>
-      <p>If a parsley farmer gets sued, can they garnish his wages? 🌿</p>
-      <br>
+      <section id="Components of a Joke">
+        <article>
+          <h2 class="header">Components of a Joke</h2>
+          
+          <aside>
+            <p>I once encountered a homeless man who asked me to spare a rupee. He said "If you give me a rupee, God will bless you with 10 thousand." I said to him "clearly, you need the 10 thousand more than I do. I’ll gladly take your money!" — Karunesh Talwar</p>
+          </aside>
 
-      <img src="laughing.gif" alt="Michael Scott laughing" width="480" height="400">
-      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Check out more jokes here!</a>
+          <ol>
+            <li>
+              <strong>The Set-Up</strong>
+              <ul>
+                <li>the premise on which the joke is told</li>
+                <li>sets up the listener to anticipate something</li>
+                <li>can be an unusual fact, an incident (made up or real), or an observation</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Detail</strong>
+              <ul>
+                <li>add your details and escalate your story</li>
+                <li>should be a crisp, one-line statement</li>
+                <li>details can be fluid but must be immediately relevant</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Punchline</strong>
+              <ul>
+                <li>reverses the expectations of the set-up OR escalates it to an extreme</li>
+              </ul>
+            </li>
+          </ol>
+
+          <p>Here is an example of a joke by Louis CK.</p>
+          <p><span style="font-weight:bold">The Set-Up:</span> You know what’s amazing to me, you can name your kid anything you want.</p>
+          <p><span style="font-weight:bold">Detail:</span> There are NO laws (around naming a kid). There should be at least a couple of laws. None. You can literally name your kid anything. You can name your kid a name without vowels if you like — PNSNDLTN.</p>
+          <p><span style="font-weight:bold">Punchline:</span> I’d like to name my kid a whole phrase. I’ll call him Ladies and Gentlemen. This is my son, Ladies and Gentlemen.</p>
+        </article>
+      </section>
+
+      <hr>
+
+      <section id="Puns">
+        <article>
+          <h2 class="header">Puns</h2>
+          <blockquote>"A pun, also known as paronomasia, is a form of word play that exploits multiple meanings of a term, or of similar-sounding words, for an intended humorous or rhetorical effect." -Wikipedia</blockquote>
+          <div>Puns have a long history in human writing. For example, the Roman playwright Plautus was famous for his puns and word games.</div>
+
+          <aside>
+            <p><span style="font-weight:bold">Fun Fact:</span> Shakespeare used over 3,000 puns in his plays. Surprisingly, Elizabethan literature considered puns and wordplay to be a "sign of literary refinement" more so than humor.<p>
+          </aside>
+
+          <ul>
+            <li>What do you call a mean crook going down stairs? A condescending con, descending.</li>
+            <li>I had a dream I was swimming in a pool of soda. Too bad it was just a Fanta sea.</li>
+            <li>What did the grape say when he got stepped on? Nothing, he just let out a little wine.</li>
+            <li>Why could the mathematician only work from home? Because he could only function in his domain.</li>
+            <li>Did you know that I'm really good at bowling? It's right up my alley.</li>
+            <li>What happens when a parsley farmer gets sued? They garnish his wages.</li>
+            <li>How does Moses make his coffee? Hebrews it.</li>
+            <li>How was the Roman Empire split in two? With a pair of Caesars.</li>
+            <li>Did you hear about the cheese factory that caught fire? There was nothing left but de brie.</li>
+          </ul>
+
+          <h3>Books Never Written</h3>
+          <div>Sometimes called "books never written" or "world's greatest books", these are jokes which consist of fictitious book titles with authors' names that contain a pun relating to the title. Perhaps the best-known example is: "Tragedy on the Cliff by Eileen Dover", which according to one source was devised by humourist Peter DeVries (1910-1993).</div>
+
+          <aside>
+            <p><span style="font-weight:bold">Fun Fact:</span> Did you know that the Tanakh (the first five books of the Bible) <a href="https://books.google.com/books?id=ThA8AAAAIAAJ&q=%22pun+forms+the+tie%22&pg=PA1#v=snippet&q=%22pun%20forms%20the%20tie%22&f=false" target="_blank">contains puns</a>?<p>
+          </aside>
+
+          <ul>
+            <li>'To the Outhouse' by Willie Maket, illustrated by Betty Wont</li>
+            <li>'The Yellow River' by I.P. Daily</li>
+            <li>'Why Should I Walk?' by Iona Carr</li>
+            <li>'How to Serve Your Fellow Man' by The Cannibals</li>
+            <li>'Supporting Athletes' by Jacques Strappe</li>
+            <li>'Caulking Made Easy' by Phil McKrevis</li>
+            <li>'The Future of Technology' by Cy Borg, Anne Droid and Rob Ott</li>
+            <li>'Interesting Places Around The World' by Ben There & Don That</li>
+            <li>'Deep in Debt' by Owen A. Lott</li>
+            <li>'Where Have All the Animals Gone?' by Darren Dabarn</li>
+          </ul>
+        </article>
+      </section>
+
+      <hr>
+
+      <section id="One-liners">
+        <article>
+          <h2 class="header">One-liners</h2>
+          <div>A one-liner is a joke delivered concisely and meant to be pithy and meaningful. As a result, it is very popular with comedians, such as Groucho Marx and Henny Youngman.</div>
+          <ul>
+            <li>My girlfriend makes me want to be a better person - so I can get a better girlfriend.</li>
+            <li>Throwing acid is wrong. In some people's eyes.</li>
+            <li>Crime in multi-story car parks is wrong on so many different levels.</li>
+            <li>My wife – it's difficult to say what she does. She sells seashells on the seashore.</li>
+            <li>It takes a lot of balls to golf the way I do.</li>
+            <li>When life gives you melons, you might be dyslexic.</li>
+            <li>I know they say that money talks, but all mine says is 'Goodbye.'</li>
+            <li>My therapist says I have a preoccupation for revenge. We’ll see about that.</li>
+            <li>Two fish are in a tank. One says, 'How do you drive this thing?'</li>
+            <li>"I have nothing to declare except my genius." (Oscar Wilde, upon arriving at US customs in 1882)</li>
+          </ul>
+        </article>
+      </section>
+
+      <hr>
+
+      <section id="Anti-jokes">
+        <article>
+          <h2 class="header">Anti-jokes</h2>
+          <div>An anti-joke is a type of humor in which the joke-teller says something that is intentionally unfunny. It usually relies on the audience's expectation of something humorous, and the irony of it not being funny is what provides the comedic value.</div>
+
+          <aside>
+            <p><span style="font-weight:bold">Fun Fact:</span> A prank form of an anti-joke, known as <a href="https://www.youtube.com/watch?v=9xduTMrUTqI" target="_blank">no soap radio</a> was popularized in 1950s New York.<p>
+          </aside>
+
+          <p><b>The obvious punchline</b> is structured like a traditional joke, but its punchline is the most obvious to the narrative.<p>
+          <ul>
+            <li>Want to hear something that will make you smile? Your facial muscles.</li>
+            <li>What do you call a pencil sharpener that can't sharpen pencils? Broken.</li>
+            <li>What do you get when you mix and a goat and a sheep? A geep.</li>
+            <li>What did one stranger say to the other? Nothing. They didn't know each other.</li>
+            <li>What did one Frenchman say to the other? I have no idea; I don’t speak French.</li>
+            <li>How does the white-tail deer jump higher than the average house? The average house can't jump.</li>
+            <li>I can still remember my Grandpa's last words before he kicked the bucket. He said, "Hey, how far do you think I can kick this bucket?"</li>
+            <li>You know what's really odd? Numbers that aren't divisible by two.</li>
+            <li>What's yellow and is something you shouldn't drink? A school bus.</li>
+            <li>What did the cowboy say at his second rodeo? "This ain't my first rodeo!"</li>
+          </ul>
+
+          <p><b>The inobvious punchline</b> contains a set-up suggesting a certain (usually risqué) punchline, but whose actual ending is the opposite of what the listener was anticipating.</p>
+          <ul>
+            <li>Did you hear about the honeymooners who confused the tube of K-Y Jelly with window putty? Quite the tragedy, all the windows fell out of their new home.</li>
+          </ul>
+        </article>
+      <section>
+
+      <hr>
+
+      <footer>
+        <iframe src="https://www.youtube.com/watch?v=W2qSfyQAhtk" title="Obama's Best Jokes"></iframe>
+        <table>
+          <tr>
+            <td><a href="https://sites.google.com/bishops.com/gentrification-in-san-diego/home?authuser=1" target="_blank">Check out another of my websites here!</a></td>
+            <td><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">Check out more jokes here!</a></td>
+          </tr>
+        </table>
+      </footer>
 
     </body>
   </html>
